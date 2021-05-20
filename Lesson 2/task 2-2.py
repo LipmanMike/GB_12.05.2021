@@ -3,20 +3,17 @@ my_list = ['в', '5', 'часов', '17', 'минут', 'температура'
 n = 0 # переменнная для смещения индекса элементов
 
 for i in range(len(my_list)): # присваиваем i индекс каждого элемента списка
-    if my_list[i] == '5':
+    if my_list[i].replace('+', '').replace('-', '').isdigit(): # условие для индекса элемента состоящего из цифр
         i += n
-        my_list.insert(i, '"')
+        my_list.insert(i, '"') # вставляем кавычки перед и после '5' и смещаем на +1 индекс элементов списка
         n += 1
         if my_list[i][0] == '+' or my_list[i][0] == '-':
-            i += n
-            my_list[i][0].insert(i, int('0'))
-            # f'{my_list[i][0]}{(int(my_list[i]):02)}'
-            n += 1
+            my_list[i] = f'{my_list[i][0]}{(int(my_list[i])):02}' # Добавляем 0 после - или + и перед '5'
+
+
 
 print(my_list)
 # new_list = ''.join(my_list)
 # print(new_list)
-
-
 
 
