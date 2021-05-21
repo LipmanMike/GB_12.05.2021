@@ -25,3 +25,18 @@ for i in my_list:
 
 print(new_list)
 print(' '.join(new_list))
+
+# phrase = "Don't panic!"
+# plist = list(phrase)
+# print(phrase)
+# # print(plist)
+#
+# plist = plist[1:8]
+# space = plist.pop(4)
+# plist.insert(2, space)
+# plist.remove("'")
+# plist.insert(-1, plist.pop(-1))
+#
+# new_phrase = ''.join(plist)
+# # print(plist)
+# print(new_phrase)
