@@ -1,9 +1,5 @@
-worker_name =  ['инженер-конструктор Игорь', 'главный бухгалтер МАРИНА', 'токарь высшего разряда нИКОЛАй',
+workers =  ['инженер-конструктор Игорь', 'главный бухгалтер МАРИНА', 'токарь высшего разряда нИКОЛАй',
                 'директор аэлита']
 
-
-
-# worker_name.split('')
-# print(worker_name)
-# for name in worker_name:
-#     print(name[1])
+for worker in workers:
+    print(f'Привет, {worker.split()[-1].title()}!')
